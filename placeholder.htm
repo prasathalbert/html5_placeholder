@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8" />
+  <title>Placeholder test page</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/html5placeholder.js"></script>
+  <script>
+    $(function(){
+      $(':input[placeholder]').placeholder();
+    });
+  </script>
+  <style>
+    body {width:500px;margin:20px auto;}
+    div {margin-bottom:10px;}
+  </style>
+</head>
+<body>
+  <form>
+  <div>
+    <label for="email">Email: </label>
+    <input value="sd" id="email" placeholder="username@thissite.com" type="email">
+  </div>
+  <div>
+    <label for="foo">Password: </label>
+    <input id="pw" placeholder="It's like, your password" type="password">
+  </div>
+  <div>
+    <label>Text:
+       <input name="text" maxlength="6" placeholder="Hi Mom" type="text">
+    </label>
+  </div>
+  <div>
+    <label>Search:
+      <input name="text" placeholder="Search Things and Stuff" type="search">
+    </label>
+  </div>
+  <div>
+    <label>Telephone:
+      <input name="text" placeholder="(XXX) XXX-XXXX" type="tel">
+    </label>
+  </div> 
+  <div>
+    <label>URL:
+      <input id="url" name="earl" placeholder="http://miketaylr.com" type="url">
+    </label>
+  </div>
+  <input type="submit">
+  </form>
+  
+
+
+</body></html>
